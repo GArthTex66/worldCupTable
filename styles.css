@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #344055;
+    color: #F7F7FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+input {
+    background-color: #85FFB8;
+    color: #344055;
+    border-color: #F7F7FF;
+    border-style: solid;
+}
+
+button {
+    background-color: #AA6DA3;
+    color: #F7F7FF;
+    border-color: #F7F7FF;
+    border-style: solid;
+}
+
+input, button:hover{
+    opacity: .9;
+}
+
+#resp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#containerTabela {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tabela {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#tabela thead tr {
+    background-color: #85FFB8;
+    color: #344055;
+    text-align: center;
+}
+
+#imc {
+    border-radius: 10px 5px 5px 5px;
+    border: solid #F7F7FF;
+    /* border-right: none;
+    border-bottom: none; */
+}
+
+#classificação {
+    border-radius: 5px 10px 5px 5px;
+    border: solid #F7F7FF;
+    /* border-left: none;
+    border-bottom: none; */
+}
+
+#tabela thead tr th {
+    padding: 5px;
+}
+
+/* celulas */
+#tabela td {
+    background-color: #AA6DA3;
+    padding: 5px;
+    text-align: center;
+    border-radius: 1px 1px 1px 5px;
+}
+
+.resultado {
+    color: #85FFB8;
+    border: solid;
+}
+
+#menu-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#menu-horizontal ul {
+    list-style: none; /*tira os marcadores*/
+    padding: 0;
+    background-color: #88153C;
+    text-align: right; /*alinhar os elementos na direita*/
+}
+
+#menu-horizontal ul li {
+    display: inline-block; /*ficar em uma linha (e naocolunas)*/
+}
+
+#menu-horizontal ul li a {
+    color: antiquewhite;
+    text-decoration: none; /*tira o sublinhado*/
+    padding: 20px;
+    display: inline-block; /*cria um bloco com o paddinginformado*/
+    transition: background 1s; /*efeito de fade combinado com o hover*/
+}
+
+#menu-horizontal ul li a:hover {
+    background-color: black;
+    opacity: 0.5; /*opcional */
+}
