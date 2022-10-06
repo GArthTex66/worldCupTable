@@ -1,1 +1,1 @@
-# worldCupTable
+# World Cup Table
