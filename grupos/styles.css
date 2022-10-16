@@ -1,10 +1,28 @@
+@font-face {
+    font-family: 'Qatar2022';
+    src: url("../assets/Qatar2022/Qatar2022Arabic-Bold.ttf");
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+*{
+    font-family: 'Qatar2022';
+}
+
+html {
+    background-color: #04151F;
+}
+
 body {
 	line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: #CAD8DE;
+    background-color: #04151F;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 ol, ul {
 	list-style: none;
@@ -22,16 +40,18 @@ table {
 	border-spacing: 0;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #344055;
-    color: #F7F7FF;
-    font-family: Arial, Helvetica, sans-serif;
+.botaoNav {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #04151F;
 }
 
-h1 {
-    font-size: 3rem;
+#titulo {
+    background-color: #04151F;
+    color: #6D0D30;
+    padding: 15px;
+    margin-bottom: 0px;
+    font-size: 4rem;
     text-align: center;
     font-weight: bold;
 }
@@ -44,34 +64,14 @@ input, button {
     cursor: pointer;
 }
 
-input {
-    background-color: #85FFB8;
-    color: #344055;
-    border-color: #F7F7FF;
-    border-style: solid;
-}
-
-button {
-    background-color: #AA6DA3;
-    color: #F7F7FF;
-    border-color: #F7F7FF;
-    border-style: solid;
-}
-
-input, button:hover{
-    opacity: .9;
-}
-
-#resp {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 #containerTabela {
+    background-color: #04151F;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
+    gap: 30px 20px;
 }
 
 #tabela {
@@ -80,23 +80,9 @@ input, button:hover{
 }
 
 #tabela thead tr {
-    background-color: #85FFB8;
-    color: #344055;
+    background-color: #6D0D30;
+    color: #FDFCFF;
     text-align: center;
-}
-
-#imc {
-    border-radius: 10px 5px 5px 5px;
-    border: solid #F7F7FF;
-    /* border-right: none;
-    border-bottom: none; */
-}
-
-#classificação {
-    border-radius: 5px 10px 5px 5px;
-    border: solid #F7F7FF;
-    /* border-left: none;
-    border-bottom: none; */
 }
 
 #tabela thead tr th {
@@ -105,15 +91,13 @@ input, button:hover{
 
 /* celulas */
 #tabela td {
-    background-color: #AA6DA3;
-    padding: 5px;
+    background-color: #FDFCFF;
+    color: #04151F;
     text-align: center;
-    border-radius: 1px 1px 1px 5px;
-}
-
-.resultado {
-    color: #85FFB8;
-    border: solid;
+    padding: 5px 60px;
+    margin: 1px ;
+    border-radius: 10px;
+    border: solid 1px #CAD8DE;
 }
 
 #menu-horizontal {
