@@ -13,7 +13,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-    background-color: #04151F;
+    background-color:#04151ff2;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     padding: 0;
     margin: 0;
     color: #CAD8DE;
-    background-color: #04151F;
+    background-color:#04151ff2;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 ol, ul {
@@ -43,12 +43,12 @@ table {
 .botaoNav {
     font-weight: bold;
     font-size: 1.1rem;
-    color: #04151F;
+    color:#04151ff2;
 }
 
 #titulo {
-    background-color: #04151F;
-    color: #6D0D30;
+    background-color:#04151ff2;
+    color: #ab0d47;
     padding: 15px;
     margin-bottom: 0px;
     font-size: 4rem;
@@ -65,7 +65,7 @@ input, button {
 }
 
 #containerTabela {
-    background-color: #04151F;
+    background-color:#04151ff2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -80,22 +80,27 @@ input, button {
 }
 
 #tabela thead tr {
-    background-color: #6D0D30;
     color: #FDFCFF;
     text-align: center;
 }
 
 #tabela thead tr th {
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid 1px #FDFCFF;
+    background-color: #7b0d35;
 }
 
 /* celulas */
 #tabela td {
+    display: flex;
     background-color: #FDFCFF;
-    color: #04151F;
-    text-align: center;
+    color:#0b539d;
+    justify-content: center;
     padding: 5px 60px;
-    margin: 1px ;
+    margin: 4px 1px ;
     border-radius: 10px;
     border: solid 1px #CAD8DE;
 }
