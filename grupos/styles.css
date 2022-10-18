@@ -56,12 +56,42 @@ table {
     font-weight: bold;
 }
 
+#busca {
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #04151ff2;
+    font-size: 1.5rem;
+}
+
 input, button {
     padding: 8px 16px;
-    font-size: 1.5rem;
     border-radius: 10px;
     margin: 0 20px;
     cursor: pointer;
+    border-color: #FDFCFF;
+    border-style: solid;
+}
+
+input {
+    background-color: #FDFCFF;
+    color: #344055;
+}
+
+button {
+    background-color: #7b0d35;
+    color: #FDFCFF;
+}
+
+input, button:hover{
+    opacity: .9;
+}
+
+img {
+    width: 4rem;
+    height: 2rem;
 }
 
 #containerTabela {
@@ -98,39 +128,10 @@ input, button {
     display: flex;
     background-color: #FDFCFF;
     color:#0b539d;
-    justify-content: center;
+    justify-content: left;
     padding: 5px 60px;
     margin: 4px 1px ;
+    width: 365px;
     border-radius: 10px;
     border: solid 1px #CAD8DE;
-}
-
-#menu-horizontal {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#menu-horizontal ul {
-    list-style: none; /*tira os marcadores*/
-    padding: 0;
-    background-color: #88153C;
-    text-align: right; /*alinhar os elementos na direita*/
-}
-
-#menu-horizontal ul li {
-    display: inline-block; /*ficar em uma linha (e naocolunas)*/
-}
-
-#menu-horizontal ul li a {
-    color: antiquewhite;
-    text-decoration: none; /*tira o sublinhado*/
-    padding: 20px;
-    display: inline-block; /*cria um bloco com o paddinginformado*/
-    transition: background 1s; /*efeito de fade combinado com o hover*/
-}
-
-#menu-horizontal ul li a:hover {
-    background-color: black;
-    opacity: 0.5; /*opcional */
 }
