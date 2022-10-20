@@ -61,7 +61,7 @@ img {
     height: 1rem;
 }
 
-#containerTabela {
+.containerTabela {
     background-color:#04151ff2;
     display: flex;
     flex-direction: row;
@@ -71,25 +71,25 @@ img {
     gap: 30px 20px;
 }
 
-#tabela {
+.tabela {
     font-size: 1rem;
     font-weight: bold;
     border: solid 1px #CAD8DE;
 }
 
-#tabela thead tr {
+.tabela thead tr {
     color: #FDFCFF;
     text-align: center;
 }
 
-#tabela thead tr th {
+.tabela thead tr th {
     padding: 5px;
     justify-content: center;
     background-color: #7b0d35;
 }
 
 /* celulas */
-#tabela td {
+.tabela td {
     background-color: #FDFCFF;
     color:#0b539d;
     padding: 5px 20px;
