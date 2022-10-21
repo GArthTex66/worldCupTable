@@ -1,0 +1,27 @@
+[
+  {
+   "jogosDoGrupo":"A",
+    "partidas":[
+      {
+        "partida":1,
+        "data":" 'xx/xx/xxxx' ",
+        "horario":"'xx:xx'",
+        "selecoes": [
+          { "name": "'Brasil'", "bandeira": "'https://s.sde.globo.com/media/organizations/2019/09/06/Catar.svg'" },
+          { "name": "'Sérvia'", "bandeira": "'https://s.sde.globo.com/media/organizations/2019/09/06/Catar.svg'" }
+        ]
+      },
+      {
+        "partida":2,
+        "data":" 'xx/xx/xxxx' ",
+        "horario":"'xx:xx'",
+        "selecoes": [
+          { "name": "'Canadá'", "bandeira": "'https://s.sde.globo.com/media/organizations/2019/09/06/Catar.svg'" },
+          { "name": "'Sérvia'", "bandeira": "'https://s.sde.globo.com/media/organizations/2019/09/06/Catar.svg'" }
+        ]
+      }
+    ]
+  }
+
+
+]
