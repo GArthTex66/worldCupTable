@@ -178,7 +178,8 @@ function dados() {
   Grupos.forEach((element, index) => {
 
     const table = document.createElement("table");
-    table.id = "Grupo " + (element.id);
+    let aux = "Grupo " + (element.id);
+    table.id = aux.toLocaleUpperCase();
     table.classList.add("tabela");
 
     const thead = document.createElement("thead");
@@ -192,9 +193,8 @@ function dados() {
     element.paises.forEach(pais => {
       const tr = document.createElement("tr");
       const td = document.createElement("td");
-      // let aux = pais.name;
-      // aux.toLowerCase();
-      td.id = pais.name;
+      let aux = pais.name;
+      td.id = aux.toLowerCase();
       td.innerHTML = `<img src = "${pais.bandeira}" alt="Bandeira_${pais.name}"> ${pais.name}`
       tr.appendChild(td);
       tbody.appendChild(tr)
@@ -208,12 +208,12 @@ function dados() {
 
 function buscaSelecao() {
   let pesquisa = document.getElementById("pesquisa").value;
-  let resposta = document.getElementById(`${pesquisa}`);
+  let resposta = document.getElementById(`${pesquisa.toLowerCase()}`);
   resposta.id = "destaquePais";
 }
 
 function buscaGrupo() {
   let pesquisa = document.getElementById("pesquisa").value;
-  let resposta = document.getElementById(`${pesquisa}`);
+  let resposta = document.getElementById(`${pesquisa.toUpperCase()}`);
   resposta.id = "destaqueGrupo";
 }
