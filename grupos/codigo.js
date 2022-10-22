@@ -42,13 +42,15 @@ function buscaSelecao() {
   let resposta = document.getElementById(`${pesquisa.toLowerCase().trim()}`);
   if(resposta)
     console.log("selecao encontrada")
+    //resposta.id = "destaquePais";
 }
 
 function buscaGrupo() {
   let pesquisa = document.getElementById("pesquisa").value;
   let resposta = document.getElementById(`${pesquisa.toUpperCase().trim()}`);
   if(resposta)
-  console.log("grupo encontrado")
+    console.log("grupo encontrado")
+    //resposta.id = "destaqueGrupo";
 }
 
 dados(myJson);
