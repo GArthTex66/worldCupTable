@@ -40,19 +40,34 @@ function dados(dadosProcurados) {
 function buscaSelecao() {
   let pesquisa = document.getElementById("pesquisa").value;
   let resposta = document.getElementById(`${pesquisa.toLowerCase().trim()}`);
-  if(resposta)
+  if(resposta){
     console.log("selecao encontrada")
-    //resposta.id = "destaquePais";
+    limparResultado(resposta,resposta.id);
+    resposta.id = "destaquePais";
+  }
 }
 
 function buscaGrupo() {
   let pesquisa = document.getElementById("pesquisa").value;
   let resposta = document.getElementById(`${pesquisa.toUpperCase().trim()}`);
-  if(resposta)
+  if(resposta){
     console.log("grupo encontrado")
-    //resposta.id = "destaqueGrupo";
+    limparResultado(resposta,resposta.id);
+    resposta.id = "destaqueGrupo";
+  }
+}
+
+function limparResultado(resposta, antigoId)
+{
+  setTimeout(
+    ()=>{
+      resposta.id = antigoId
+    },
+    3000
+  )
 }
 
 dados(myJson);
 window.buscaSelecao = buscaSelecao;
 window.buscaGrupo = buscaGrupo;
+window.limparResultado = limparResultado;

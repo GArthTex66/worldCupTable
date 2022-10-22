@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="./codigo.js"></script>
+  <script type="module" src="./codigo.js"></script>
 </head>
 
-<body onload="dados()">
+<body>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,6 +28,11 @@
     </div>
   </nav>
   <h1 id="titulo">JOGOS</h1>
+  <div id="busca">
+    <input type="search" name="pesquisa" id="pesquisa" placeholder="Digite aqui" />
+    <button type="button" onclick="buscaSelecao()">Buscar Seleção</button>
+    <button type="button" onclick="buscaGrupo()">Buscar Grupo</button>
+  </div>
 </body>
 
 </html>
