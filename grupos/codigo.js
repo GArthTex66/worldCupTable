@@ -9,7 +9,7 @@ function dados(dadosProcurados) {
   grupos.forEach((element) => {
 
     const table = document.createElement("table");
-    let grupoId = "Grupo " + (element.id);
+    let grupoId = element.id;
     table.id = grupoId.toUpperCase().trim();
     table.classList.add("tabela");
 

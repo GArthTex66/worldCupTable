@@ -111,11 +111,6 @@ img {
     font-weight: bold;
 }
 
-/* .tabela:hover {
-    transition: all 400ms cubic- bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(1.2);
-} */
-
 .tabela thead tr {
     color: #FDFCFF;
     text-align: center;
