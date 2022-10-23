@@ -16,7 +16,7 @@ function dados() {
 
     const tr1 = document.createElement("tr");
     tr1.innerHTML =  `<th colspan='3'>${element.data}</th>`;
-    tr1.classList.add(element.data);
+    tr1.classList.add(element.data.slice(0,5));
     thead.appendChild(tr1);
     table.appendChild(thead);
 
@@ -30,9 +30,8 @@ function dados() {
       var nome2 = jogo.confronto.visitante.name.slice(0,3).toUpperCase();
       td2.innerHTML = `${nome1} <img src='${jogo.confronto.mandante.bandeira}'> X <img src='${jogo.confronto.visitante.bandeira}'>${nome2}`;
       td3.innerHTML = jogo.hora;
-      // a mesma TAG pode receber várias Classes mas só um ID.
       tr.classList.add(jogo.grupo);
-      tr.classList.add(jogo.hora);
+      tr.classList.add(jogo.hora.toUpperCase());
       tr.classList.add(nome1);
       tr.classList.add(nome2);
       tr.appendChild(td1);
@@ -50,20 +49,23 @@ function dados() {
 function busca() {
   let pesquisa = document.getElementById("pesquisa").value;
   let resposta = document.getElementsByClassName(`${pesquisa.slice(0,3).toUpperCase().trim()}`);
-  if(resposta){
-    console.log("resultado encontrado");
-    limparResultado(resposta,resposta.id);
-    resposta.id = "destaque";
-  }
+  
+  console.log(resposta);
+  const selecoes = [...resposta];
+  selecoes.forEach(selecao => {
+    selecao.id = "destaque";
+    limparResultado(selecao, "");
+  })
 }
 
 function buscaData() {
   let pesquisa = document.getElementById("pesquisa").value;
-  let resposta = document.getElementsByClassName(pesquisa);
-  if(resposta){
+  let resposta = document.getElementsByClassName(`${pesquisa.slice(0,5).trim()}`);
+  console.log(resposta);
+  if(resposta[0]){
     console.log("data encontrada");
-    limparResultado(resposta,resposta.id);
-    resposta.id = "destaque";
+    limparResultado(resposta[0],resposta[0].id);
+    resposta[0].id = "destaqueData";
   }
 }
 
